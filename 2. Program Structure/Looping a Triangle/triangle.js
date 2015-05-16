@@ -11,3 +11,9 @@ Write a loop that makes seven calls to console.log to output the following trian
 ######
 #######
 */
+var hash = "#";
+
+do {
+  console.log(hash);
+  hash += "#";
+} while (hash.length <= 6);
