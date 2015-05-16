@@ -26,7 +26,7 @@ for (var y = 0; y < gridSize; y++) {
     } else {
       chessBoard += "#";
     }
-  } chessBoard += "\n"
+  } chessBoard += "\n";
 }
 
 console.log(chessBoard);
