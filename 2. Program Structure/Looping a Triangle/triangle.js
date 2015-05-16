@@ -17,3 +17,10 @@ do {
   console.log(hash);
   hash += "#";
 } while (hash.length <= 6);
+
+/*
+Alternate Solution
+
+for (var line = "#"; line.length < 8; line += "#")
+  console.log(line);
+*/
