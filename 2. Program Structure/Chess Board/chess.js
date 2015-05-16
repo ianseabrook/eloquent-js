@@ -21,11 +21,10 @@ var chessBoard = "";
 
 for (var y = 0; y < gridSize; y++) {
   for (var x = 0; x < gridSize; x++) {
-    if ((x + y) % 2 === 0) {
+    if ((x + y) % 2 === 0)
       chessBoard += " ";
-    } else {
+    else
       chessBoard += "#";
-    }
   } chessBoard += "\n";
 }
 
