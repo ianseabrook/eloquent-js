@@ -12,6 +12,19 @@ As a bonus assignment, modify your range function to take an optional third argu
 */
 
 // Your code here.
+a = [];
+
+function range(s,e) {
+  for (var i = s; i <= e; i++) {
+    a.push(i);
+  }
+}
+
+function sum(array) {
+  for (var i = 0; i < array.length; i++) {
+    array[i]// to be completed
+  }
+}
 
 console.log(sum(range(1, 10)));
 // → 55
