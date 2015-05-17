@@ -9,6 +9,14 @@ Next, write a function called countChar that behaves like countBs, except it tak
 */
 
 // Your code here.
+function countChar(string, char) {
+  var totalChars = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) === char) {
+      totalChars++;
+    }
+  } return totalChars;
+}
 
 console.log(countBs("BBC"));
 // → 2
