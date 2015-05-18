@@ -7,6 +7,21 @@ Thinking back to the notes about side effects and pure functions in the previous
 */
 
 // Your code here.
+function reverseArray(array) {
+  var newArray = [];
+  for (var i = 0; i < array.length; i++) {
+    newArray.unshift(array[i]);
+  } return newArray;
+}
+
+function reverseArrayInPlace(array) {
+  for (var i = 0; i < Math.floor(array.length / 2); i++) {
+    var old = array[i];
+    array[i] = array[array.length - 1 - i];
+    array[array.length - 1 - i] = old;
+  }
+  return array;
+}
 
 console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
