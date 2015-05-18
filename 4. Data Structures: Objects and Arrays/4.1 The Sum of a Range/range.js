@@ -12,18 +12,26 @@ As a bonus assignment, modify your range function to take an optional third argu
 */
 
 // Your code here.
-a = [];
+function range(start, end, step) {
+  if (arguments.length < 3) step = 1;
+  var array = [];
 
-function range(s,e) {
-  for (var i = s; i <= e; i++) {
-    a.push(i);
-  }
+  if (step > 0) {
+    for (var i = start; i <= end; i += step) {
+      array.push(i);
+    }
+  } else {
+    for (var i = start; i >= end; i += step) {
+      array.push(i);
+    }
+  } return array;
 }
 
 function sum(array) {
+  var counter = 0;
   for (var i = 0; i < array.length; i++) {
-    array[i]// to be completed
-  }
+    counter += array[i];
+  } return counter;
 }
 
 console.log(sum(range(1, 10)));
