@@ -5,5 +5,7 @@ Use the reduce method in combination with the concat method to “flatten” an 
 */
 var arrays = [[1, 2, 3], [4, 5], [6]];
 // Your code here.
-
+console.log(arrays.reduce(function(total, combine) {
+  return total.concat(combine);
+}));
 // → [1, 2, 3, 4, 5, 6]
